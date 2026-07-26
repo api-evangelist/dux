@@ -1,7 +1,23 @@
 aid: dux
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/dux.png
 name: Dux
-description: Dux is a company surfaced as a portfolio company of redpoint-ventures and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Dux is a cybersecurity company building an Agentic Exposure Management platform that uses
+  AI agents to identify which vulnerabilities are truly exploitable, recommend lightweight mitigations,
+  and accelerate patch and remediation work across an organization's attack surface. The company raised
+  a $9M seed round led by Redpoint and TLV Partners in December 2025. It was surfaced as a Redpoint
+  Ventures portfolio company and added to the API Evangelist network; as of this enrichment pass Dux
+  publishes no public API, SDK, developer portal, or documentation surface.
 url: https://raw.githubusercontent.com/api-evangelist/dux/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +27,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Security
+- Cybersecurity
+- Vulnerability Management
+- Exposure Management
+- Artificial Intelligence
+- Agents
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +43,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/dux-domain-security.yml
 - type: Website
   url: https://dux.io/
+- type: PrivacyPolicy
+  url: https://drive.google.com/file/d/1qVw8vh_c0Mrk3c4eiqKV_MQoncDv4DQa/view?usp=sharing
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
